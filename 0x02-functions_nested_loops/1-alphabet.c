@@ -1,23 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - declaring a function
  *
- * print_alphabet - Declaration of a new function
- *
- * Return: void
+ * Return: Always 0
  */
-int main(void)
-{
 void print_alphabet(void)
 {
 	char a = 'a';
 
 	while (a <= 'z')
 	{
-		putchar(a);
+		_putchar(a);
 		a++;
 	}
-	putchar('\n');
-	return;
-}
+	_putchar('\n');
 }
