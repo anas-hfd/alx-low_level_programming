@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *_isalpha - check alphabet
- *@c: character
- *return: 1 if c is an alphabet otherwise 0
+ * _isalpha - alphabet chacker
+ * @c: character
+ * Return: 1 if c is alphabet, otherwise 0
  */
 
 int _isalpha(int c)
@@ -11,10 +11,10 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-	else if ( c <= 122 && c >= 97)
-        {
-                return (1);
-        }
+	else if (c <= 122 && c >= 97)
+	{
+		return (1);
+	}
 	else
 	{
 		return (0);
