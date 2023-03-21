@@ -14,11 +14,9 @@ int print_last_digit(int n)
 	{
 		int z;
 
-		z = x * (-1);
+		z = x * -1;
 		return (z);
 	}
-	else
-	{
-		return (x);
-	}
+	_putchar(x + '0');
+	return (x);
 }
