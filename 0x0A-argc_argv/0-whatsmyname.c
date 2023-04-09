@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - Entry point
+ *main - prints the filename
  *@unused_variable: unused
  *@argv: argument vector
  *Return: int

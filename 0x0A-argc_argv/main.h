@@ -2,5 +2,7 @@
 #define MAIN_H
 
 int _putchar(char c);
-int main(int unused_variable __attribute__((unused)), char *argv[]);
+int _print_name(int unused_variable __attribute__((unused)), char *argv[]);
+int _print_number(int argc);
+
 #endif /* MAIN_H */
