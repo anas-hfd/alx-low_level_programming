@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- *@argc: argument count
+ *@unused_variable: unused
  *@argv: argument vector
  *Return: int
  */
