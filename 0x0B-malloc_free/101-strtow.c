@@ -8,7 +8,7 @@
  */
 char **strtow(char *str)
 {
-	int a, b = 0, c, i = 0, wlen = 0, len = strlen(str);
+	int a, b = 0, c, i = 0, len = strlen(str), wlen = 0;
 	char **words;
 
 	for (a = 0; a < len; a++)
@@ -18,11 +18,14 @@ char **strtow(char *str)
 	}
 	words = (char **)malloc(sizeof(char *) * (i + 1));
 	if (words == NULL)
+	{
 		return (NULL);
+	}
 	for (a = 0; a < len; a++)
 	{
 		if (str[a] != ' ' && (a == 0 || str[a - 1] == ' '))
 		{
+			wlen = 0;
 			for (c = a; c < len && str[c] != ' '; c++)
 			{
 				wlen++;
@@ -37,11 +40,11 @@ char **strtow(char *str)
 				free(words);
 				return (NULL);
 			}
-			strncpy(words[b], &str[i], wlen);
+			strncpy(words[b], &str[a], wlen);
 			words[b][wlen] = '\0';
 			b++;
 		}
 	}
-	words[i] = NULL;
+	words[i + 1] = NULL;
 	return (words);
 }
