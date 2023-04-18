@@ -25,7 +25,7 @@ char *_strcpy(char *dest, char *src)
  *Return: len
 */
 
-int _strlen( char *str)
+int _strlen(char *str)
 {
 	int length = 0;
 
