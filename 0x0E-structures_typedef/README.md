@@ -1,0 +1,1 @@
+ C struct and typedef
