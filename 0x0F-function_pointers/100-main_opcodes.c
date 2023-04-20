@@ -10,28 +10,33 @@ void print_opcodes(int num_bytes);
  * Return: int
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int num_bytes = atoi(argv[1]);
+	int n_bytes, i;
+	char *arr;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);
+		exit(1);
 	}
-	if (num_bytes < 0)
+	n_bytes = atoi(argv[1]);
+	if (n_bytes < 0)
 	{
 		printf("Error\n");
-		return (2);
+		exit(2);
 	}
-	else
+	arr = (char *)main;
+	for (i = 0; i < n_bytes; i++)
 	{
-		if (print_opcodes != NULL && num_bytes != 0)
+		if (i == n_bytes - 1)
 		{
-			print_opcodes(num_bytes);
+			printf("%02hhx\n", arr[i]);
+			break;
 		}
-		return (0);
+		printf("%02hhx ", arr[i]);
 	}
+	return (0);
 }
 
 /**
