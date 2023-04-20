@@ -26,7 +26,10 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		print_opcodes(num_bytes);
+		if (print_opcodes != NULL && num_bytes != 0)
+		{
+			print_opcodes(num_bytes);
+		}
 		return (0);
 	}
 }
