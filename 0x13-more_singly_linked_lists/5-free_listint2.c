@@ -9,7 +9,7 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *node = *head, *helper;
+	listint_t *node, *helper;
 
 	if (*head == NULL)
 	{
@@ -17,6 +17,7 @@ void free_listint2(listint_t **head)
 	}
 	else
 	{
+		node = *head;
 		while (node != NULL)
 		{
 			helper = node;
