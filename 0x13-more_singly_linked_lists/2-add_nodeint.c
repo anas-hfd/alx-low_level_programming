@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * add_nodeint - add an int nodde to the beggining
+ * @head: list head
+ * @n: int to store at the new node
+ * Return: new node or NULL
+ */
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
