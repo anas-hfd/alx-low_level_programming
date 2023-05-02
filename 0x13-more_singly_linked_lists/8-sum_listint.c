@@ -9,7 +9,7 @@
 
 int sum_listint(listint_t *head)
 {
-	int n, i ,s = 0;
+	int n, i, s = 0;
 
 	if (head == NULL)
 	{
@@ -17,7 +17,7 @@ int sum_listint(listint_t *head)
 	}
 	else
 	{
-		for (i = 0; head != NULL;i++)
+		for (i = 0; head != NULL; i++)
 		{
 			n = head->n;
 			s = s + n;
