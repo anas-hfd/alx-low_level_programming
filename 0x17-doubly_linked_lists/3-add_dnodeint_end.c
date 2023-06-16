@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *add_nodeint_end - add node to the end
+ *add_dnodeint_end - add node to the end
  *@head: ptr to head
  *@n: node data
  *Return: dll
